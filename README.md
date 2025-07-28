@@ -12,6 +12,7 @@ The project includes preprocessed structural data and a ready-to-run analysis no
 
 ## 📁 Repository Structure
 
+```
 MD_analysis_oligomers/
    |-- DATA_structures/
      |-- molname_distances_i.npy # C5-C5 distances for subtrajectory i of oligomer `molname'
@@ -25,6 +26,7 @@ MD_analysis_oligomers/
 │   ├── importdata_structure.ipynb
 │   └── MD_analysis_complete.ipynb
 └── README.md
+```
 
 ## 🧪 Project Overview
 
