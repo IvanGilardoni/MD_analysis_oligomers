@@ -1,16 +1,16 @@
 # 🧬 MD_analysis_oligomers
 
-**Analysis of Molecular Dynamics (MD) simulations of RNA oligomers**  
+**Analysis of molecular dynamics (MD) simulations of RNA oligomers**  
 This repository provides data and analysis tools for studying the structural dynamics of RNA oligomers, specifically:
 
-- **Distances between nucleobases**, computed via their **C5 carbon atoms** (within the base rings)
+- **distances between nucleobases**, computed via their **C5 carbon atoms** (within the base rings)
 - **Hydrogen bonds** between bases, detected throughout the MD trajectories
 
 The project includes preprocessed structural data and a ready-to-run analysis notebook.  
 
 ---
 
-## 📁 Repository Structure
+## 📁 Repository structure
 
 ```
 MD_analysis_oligomers/
@@ -29,7 +29,7 @@ MD_analysis_oligomers/
 └── README.md # This file
 ```
 
-## 🧪 Project Overview
+## 🧪 Project overview
 
 This project supports structural analysis of RNA oligomers based on MD simulations.  
 Key observables include:
@@ -45,8 +45,8 @@ These quantities have been computed from raw MD data on remote university storag
 
 To explore the results with data only from DATA_structures (inter-residue distances and hydrogen bonds):
 
-  - Run the analysis: [`MD_analysis.ipynb`](MD_analysis.ipynb)  
-     Self-contained analysis using data in `DATA_structures/`
+  - Run the analysis: [`MD_analysis.ipynb`](MD_analysis.ipynb)
+     Self-contained analysis using data in [`DATA_structures`](DATA_structures/)
 
 > ✅ Does **not require raw MD outputs**  
 > ✅ Recommended for most users
@@ -90,46 +90,40 @@ Further data (beyond inter-residue distances and hydrogen bonds) are publicly av
 
 The main notebook [`MD_analysis.ipynb`](MD_analysis.ipynb) requires the following Python libraries:
 
-```python
+```
+python
 os
 pandas
 pickle
 numpy
 matplotlib
 sklearn
+MDAnalysis
+```
+
 You can install them via:
 
-bash
-Copia
-Modifica
-pip install pandas numpy matplotlib scikit-learn
-📚 Scientific Context
-This project enables systematic analysis of RNA conformational behavior from MD simulations.
+`pip install pandas numpy matplotlib scikit-learn MDAnalysis`
+
+## 📚 Scientific context
+
+This project enables systematic analysis of RNA conformational behavior from MD simulations.  
 The data provide insights into:
 
-Base pairing and stacking through C5–C5 distances
-
-Stability and dynamics of inter-base hydrogen bonds
+- **base pairing and stacking** through C5–C5 distances  
+- **stability and dynamics** of inter-base hydrogen bonds
 
 If you use this dataset or code in your research, please cite the associated Zenodo record.
 
-📦 Zenodo dataset: https://zenodo.org/records/14956459
-📖 Code to load data: github.com/bussilab/MDRefine
-
-📜 License
-This project is released under the MIT License. See the LICENSE file for details.
-
-🙋‍♀️ Questions or Feedback?
-Feel free to:
-
-Open an issue
-
-Contact the author: your.email@example.com
-
-yaml
-Copia
-Modifica
+📦 **Zenodo dataset**: [https://zenodo.org/records/14956459](https://zenodo.org/records/14956459)  
+📖 **code to load data**: [https://github.com/bussilab/MDRefine](https://github.com/bussilab/MDRefine)
 
 ---
 
-Let me know if you want this saved as a file, or need help creating a `CITATION.cff` or a Zenodo badge.
+## 🙋‍♀️ Questions or Feedback?
+
+Feel free to:
+
+- 📂 [Open an issue](https://github.com/your-username/MD_analysis_oligomers/issues)
+- 📧 Contact the author: `igilardo@sissa.it`
+
