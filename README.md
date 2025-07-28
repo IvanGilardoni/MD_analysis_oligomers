@@ -1,6 +1,7 @@
 # 🧬 MD_analysis_oligomers
 
-**Analysis of molecular dynamics (MD) simulations of RNA oligomers**  
+**Analysis of molecular dynamics (MD) simulations of RNA oligomers**
+
 This repository provides data and analysis tools for studying the structural dynamics of RNA oligomers, specifically:
 
 - **distances between nucleobases**, computed via their **C5 carbon atoms** (within the base rings)
@@ -37,15 +38,16 @@ Key observables include:
 - **C5–C5 distances**: Used to quantify base–base spatial relationships
 - **Hydrogen bonds**: Computed using geometric criteria between donor/acceptor atoms
 
-These quantities have been computed from raw MD data on remote university storage as described in [`my_notebooks/importdata_structure.ipynb`](my_notebooks/importdata_structure.ipynb)
+These quantities have been computed from raw MD data on remote university storage as described in [`importdata_structure.ipynb`](my_notebooks/importdata_structure.ipynb)
 
 ---
 
-## ⚡ Quick Start: Minimal Analysis (from DATA_structures)
+## ⚡ Quick start: minimal analysis (from DATA_structures)
 
 To explore the results with data only from DATA_structures (inter-residue distances and hydrogen bonds):
 
   - Run the analysis: [`MD_analysis.ipynb`](MD_analysis.ipynb)
+
      Self-contained analysis using data in [`DATA_structures`](DATA_structures/)
 
 > ✅ Does **not require raw MD outputs**  
@@ -53,22 +55,22 @@ To explore the results with data only from DATA_structures (inter-residue distan
 
 ---
 
-## 🧬 Full Workflow (for reference only)
+## 🧬 Full workflow (for reference only)
 
 - [`importdata.ipynb`](my_notebooks/importdata.ipynb):  
   Used to extract raw MD output from a **remote university network storage** and upload the data to Zenodo. Not runnable without access to that network.
 
 - [`importdata_structure.ipynb`](my_notebooks/importdata_structure.ipynb):  
-  Used internally to generate C5 distances and hydrogen bond files from raw trajectories before uploading to Zenodo. Not intended for general use.
+  Used to extract raw MD output from a **remote university network storage**, compute C5 distances and Hydrogen bond files from raw trajectories, and upload these data to [`DATA_structures`](DATA_structures/). Not runnable without access to that network.
 
 - [`MD_analysis_complete.ipynb`](my_notebooks/MD_analysis_complete.ipynb):  
-  A detailed, exploratory version of the analysis, using data before public release.
+  A detailed, exploratory version of the analysis.
 
 ---
 
-## 📄 Data Description: `DATA_structures/`
+## 📄 Data description: `DATA_structures/`
 
-This directory contains all you need for structural analysis:
+This directory contains all you need for structural analysis in [`MD_analysis.ipynb`](MD_analysis.ipynb):
 
 - `molname_distances_i.npy`  
   → Numpy array of pairwise **C5–C5 distances** between nucleobases for subtrajectory `i` of oligomer `molname`
@@ -84,7 +86,7 @@ This directory contains all you need for structural analysis:
 
 ---
 
-Further data (beyond inter-residue distances and hydrogen bonds) are publicly available on Zenodo.https://zenodo.org/records/14956459; to download data from it you can also look at https://github.com/bussilab/MDRefine (first cells in tutorial to download data, notebooks \texttt{load\_data\_oligomers} and \texttt{load\_data\_alchemical} to see how data have been loaded on Zenodo).
+Further data (beyond inter-residue distances and hydrogen bonds) are publicly available on Zenodo.https://zenodo.org/records/14956459. To download data from it you can also look at https://github.com/bussilab/MDRefine (first cells in tutorial to download data, notebooks \texttt{load\_data\_oligomers} and \texttt{load\_data\_alchemical} to see how data have been loaded on Zenodo).
 
 ## 📦 Dependencies
 
@@ -120,7 +122,7 @@ If you use this dataset or code in your research, please cite the associated Zen
 
 ---
 
-## 🙋‍♀️ Questions or Feedback?
+## 🙋‍♀️ Questions or feedback?
 
 Feel free to:
 
