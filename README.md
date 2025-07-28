@@ -126,6 +126,6 @@ If you use this dataset or code in your research, please cite the associated Zen
 
 Feel free to:
 
-- 📂 [Open an issue](https://github.com/your-username/MD_analysis_oligomers/issues)
+- 📂 [Open an issue](https://github.com/IvanGilardoni/MD_analysis_oligomers/issues)
 - 📧 Contact the author: `igilardo@sissa.it`
 
