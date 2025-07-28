@@ -86,7 +86,7 @@ This directory contains all you need for structural analysis in [`MD_analysis.ip
 
 ---
 
-Further data (beyond inter-residue distances and hydrogen bonds) are publicly available on [`Zenodo`](https://zenodo.org/records/14956459). They have been obtained from raw data as indicated in [`MDRefine`](https://github.com/bussilab/MDRefine\load_data_oligomers).
+Further data (beyond inter-residue distances and hydrogen bonds) are publicly available on [`Zenodo`](https://zenodo.org/records/14956459). They have been obtained from raw data as indicated in [`MDRefine`](https://github.com/bussilab/MDRefine/load_data_oligomers).
 
 ## 📦 Dependencies
 
