@@ -26,7 +26,7 @@ MD_analysis_oligomers/
 │ ├── importdata_structure.ipynb # Preprocesses raw MD output from remote university storage and uploads to DATA_structures
 │ └── MD_analysis_complete.ipynb # Full-featured exploratory notebook (not standalone)
 │
-├── MD_analysis.ipynb # Standalone analysis notebook using data from DATA_structures
+├── MD_analysis.ipynb # Standalone analysis notebook using data from DATA_structures and Zenodo
 └── README.md # This file
 ```
 
@@ -48,7 +48,7 @@ To explore the results with data only from DATA_structures (inter-residue distan
 
   - Run the analysis: [`MD_analysis.ipynb`](MD_analysis.ipynb)
 
-     Self-contained analysis using data in [`DATA_structures`](DATA_structures/)
+     Self-contained analysis using data in [`DATA_structures`](DATA_structures/) and [`Zenodo`](https://zenodo.org/records/14956459)
 
 > ✅ Does **not require raw MD outputs**  
 > ✅ Recommended for most users
@@ -86,7 +86,7 @@ This directory contains all you need for structural analysis in [`MD_analysis.ip
 
 ---
 
-Further data (beyond inter-residue distances and hydrogen bonds) are publicly available on Zenodo.https://zenodo.org/records/14956459. To download data from it you can also look at https://github.com/bussilab/MDRefine (first cells in tutorial to download data, notebooks \texttt{load\_data\_oligomers} and \texttt{load\_data\_alchemical} to see how data have been loaded on Zenodo).
+Further data (beyond inter-residue distances and hydrogen bonds) are publicly available on [`Zenodo`](https://zenodo.org/records/14956459). They have been obtained from raw data as indicated in [`MDRefine`](https://github.com/bussilab/MDRefine\load_data_oligomers).
 
 ## 📦 Dependencies
 
@@ -118,7 +118,6 @@ The data provide insights into:
 If you use this dataset or code in your research, please cite the associated Zenodo record.
 
 📦 **Zenodo dataset**: [https://zenodo.org/records/14956459](https://zenodo.org/records/14956459)  
-📖 **code to load data**: [https://github.com/bussilab/MDRefine](https://github.com/bussilab/MDRefine)
 
 ---
 
