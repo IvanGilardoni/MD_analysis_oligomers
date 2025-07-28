@@ -14,18 +14,19 @@ The project includes preprocessed structural data and a ready-to-run analysis no
 
 ```
 MD_analysis_oligomers/
-   |-- DATA_structures/
-     |-- molname_distances_i.npy # C5-C5 distances for subtrajectory i of oligomer `molname'
-     |-- molname_Hb_i.npy # Hydrogen bonds for subtrajectory i
-     |-- reference_test_molname.pdb # Reference PDB structure of each oligomer
-     |-- n_frames.pickle # Number of frames per subtrajectory
-  |-- my_notebooks/
-
-├── my_notebooks
-│   ├── importdata.ipynb
-│   ├── importdata_structure.ipynb
-│   └── MD_analysis_complete.ipynb
-└── README.md
+├── DATA_structures/
+│ ├── molname_distances_i.npy # C5–C5 distances for subtrajectory i of oligomer 'molname'
+│ ├── molname_Hbonds_i.npy # Hydrogen bonds for subtrajectory i
+│ ├── reference_test_molname.pdb # Reference PDB structure of each oligomer
+│ └── n_frames.pickle # Number of frames per subtrajectory
+│
+├── my_notebooks/
+│ ├── importdata.ipynb # Preprocesses raw MD output from remote university storage and uploads to Zenodo
+│ ├── importdata_structure.ipynb # Preprocesses raw MD output from remote university storage and uploads to DATA_structures
+│ └── MD_analysis_complete.ipynb # Full-featured exploratory notebook (not standalone)
+│
+├── MD_analysis.ipynb # Standalone analysis notebook using data from DATA_structures
+└── README.md # This file
 ```
 
 ## 🧪 Project Overview
@@ -42,17 +43,9 @@ These quantities have been computed from raw MD data on remote university storag
 
 ## ⚡ Quick Start: Minimal Analysis (from DATA_structures)
 
-To explore the results without accessing Zenodo repository nor raw MD trajectories:
+To explore the results with data only from DATA_structures (inter-residue distances and hydrogen bonds):
 
-1. Download the processed data from the Zenodo repository:  
-   👉 https://zenodo.org/records/14956459  
-   or use the Python scripts in  
-   👉 [bussilab/MDRefine](https://github.com/bussilab/MDRefine)  
-   – See notebooks `load_data_oligomers.ipynb` or `load_data_alchemical.ipynb` for downloading examples.
-
-2. Run the analysis:
-
-   - [`MD_analysis.ipynb`](MD_analysis.ipynb)  
+  - Run the analysis: [`MD_analysis.ipynb`](MD_analysis.ipynb)  
      Self-contained analysis using data in `DATA_structures/`
 
 > ✅ Does **not require raw MD outputs**  
