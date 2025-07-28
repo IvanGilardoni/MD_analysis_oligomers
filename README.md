@@ -12,8 +12,7 @@ The project includes preprocessed structural data and a ready-to-run analysis no
 
 ## 📁 Repository Structure
 
-<pre><code>```text MD_analysis_oligomers/ ├── DATA_structures/ │ ├── molname_distances_i.npy # C5–C5 distances for subtrajectory i of oligomer 'molname' │ ├── molname_Hbonds_i.npy # Hydrogen bonds for subtrajectory i │ ├── reference_test_molname.pdb # Reference PDB structure of each oligomer │ └── n_frames.pickle # Number of frames per subtrajectory │ ├── my_notebooks/ │ ├── importdata.ipynb # Loads raw MD output from remote university storage and uploads to Zenodo │ ├── importdata_structure.ipynb # Processes structural data; used before Zenodo dataset was created │ └── MD_analysis_complete.ipynb # Full-featured exploratory notebook (not standalone) │ ├── MD_analysis.ipynb # Standalone analysis notebook using Zenodo-hosted data └── README.md # This file ```</code></pre>
-
+<pre><code>``` MD_analysis_oligomers/ ├── DATA_structures/ │ ├── molname_distances_i.npy # C5–C5 distances for subtrajectory i of oligomer 'molname' │ ├── molname_Hbonds_i.npy # Hydrogen bonds for subtrajectory i │ ├── reference_test_molname.pdb # Reference PDB structure of each oligomer │ └── n_frames.pickle # Number of frames per subtrajectory │ ├── my_notebooks/ │ ├── importdata.ipynb # Loads raw MD output from remote university storage and uploads to Zenodo │ ├── importdata_structure.ipynb # Processes structural data; used before Zenodo dataset was created │ └── MD_analysis_complete.ipynb # Full-featured exploratory notebook (not standalone) │ ├── MD_analysis.ipynb # Standalone analysis notebook using Zenodo-hosted data └── README.md # This file ```</code></pre>
 
 ## 🧪 Project Overview
 
