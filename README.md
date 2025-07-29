@@ -55,7 +55,7 @@ To explore the results with data only from DATA_structures (inter-residue distan
 
 ---
 
-## 🧬 Full workflow (for reference only)
+## 🧬 Full workflow
 
 - [`importdata.ipynb`](my_notebooks/importdata.ipynb):  
   Used to extract raw MD output from a **remote university network storage** and upload the data to Zenodo. Not runnable without access to that network.
@@ -93,7 +93,6 @@ Further data (beyond inter-residue distances and hydrogen bonds) are publicly av
 The main notebook [`MD_analysis.ipynb`](MD_analysis.ipynb) requires the following Python libraries:
 
 ```
-python
 os
 pandas
 pickle
@@ -107,6 +106,18 @@ You can install them via:
 
 `pip install pandas numpy matplotlib scikit-learn MDAnalysis`
 
+The second part of the notebook [`MD_analysis.ipynb`](MD_analysis.ipynb) requires also the following Python libraries:
+
+```
+sys
+jax
+MDRefine
+```
+
+You can install them via:
+
+`pip install sys jax MDRefine`
+
 ## 📚 Scientific context
 
 This project enables systematic analysis of RNA conformational behavior from MD simulations.  
@@ -115,9 +126,22 @@ The data provide insights into:
 - **base pairing and stacking** through C5–C5 distances  
 - **stability and dynamics** of inter-base hydrogen bonds
 
-If you use this dataset or code in your research, please cite the associated Zenodo record.
+If you use this dataset or code in your research, please cite the references
 
-📦 **Zenodo dataset**: [https://zenodo.org/records/14956459](https://zenodo.org/records/14956459)  
+- Gilardoni, I., Piomponi, V., Fröhlking, T., & Bussi, G. (2025).  
+  **MDRefine: A Python package for refining molecular dynamics trajectories with experimental data**.  
+  *The Journal of Chemical Physics*, 162(19). AIP Publishing.  
+  [https://doi.org/10.1063/5.0256841](https://doi.org/10.1063/5.0256841)
+
+- Gilardoni, I., Fröhlking, T., & Bussi, G. (2024).  
+  **Boosting ensemble refinement with transferable force-field corrections: Synergistic optimization for molecular simulations**.  
+  *The Journal of Physical Chemistry Letters*, 15(5), 1204–1210. ACS Publications.  
+  [https://doi.org/10.1021/acs.jpclett.3c03423](https://doi.org/10.1021/acs.jpclett.3c03423)
+
+- Fröhlking, T., Bernetti, M., & Bussi, G. (2023).  
+  **Simultaneous refinement of molecular dynamics ensembles and forward models using experimental data**.  
+  *The Journal of Chemical Physics*, 158(21). AIP Publishing.  
+  [https://doi.org/10.1063/5.0151163](https://doi.org/10.1063/5.0151163)
 
 ---
 
