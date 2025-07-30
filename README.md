@@ -150,5 +150,5 @@ If you use this dataset or code in your research, please cite the references
 Feel free to:
 
 - 📂 [Open an issue](https://github.com/IvanGilardoni/MD_analysis_oligomers/issues)
-- 📧 Contact the author: `igilardo@sissa.it`
+- 📧 Contact the author: [igilardo@sissa.it](igilardo@sissa.it)
 
