@@ -1,4 +1,4 @@
-# <img src="image.png" alt="alt text" width="50" /> MD_analysis_oligomers
+# <img src="image.png" alt="alt text" width="30" /> MD_analysis_oligomers
 
 **Analysis of molecular dynamics (MD) simulations of RNA oligomers**
 
@@ -55,7 +55,7 @@ To explore the results with data only from DATA_structures (inter-residue distan
 
 ---
 
-## <img src="image.png" alt="alt text" width="50" /> Full workflow
+## <img src="image.png" alt="alt text" width="30" /> Full workflow
 
 - [`importdata.ipynb`](my_notebooks/importdata.ipynb):  
   Used to extract raw MD output from a **remote university network storage** and upload the data to Zenodo. Not runnable without access to that network.
