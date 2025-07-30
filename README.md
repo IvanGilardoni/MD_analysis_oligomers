@@ -1,4 +1,4 @@
-# <img src="image.png" alt="alt text" width="300" /> MD_analysis_oligomers
+# <img src="image.png" alt="alt text" width="30" /> MD_analysis_oligomers
 
 **Analysis of molecular dynamics (MD) simulations of RNA oligomers**
 
