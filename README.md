@@ -21,7 +21,7 @@ MD_analysis_oligomers/
 │ ├── reference_test_molname.pdb # Reference PDB structure of each oligomer
 │ └── n_frames.pickle # Number of frames per subtrajectory
 │
-├── my_notebooks/
+├── preprocessing/
 │ ├── importdata.ipynb # Preprocesses raw MD output from remote university storage and uploads to Zenodo
 │ ├── importdata_structure.ipynb # Preprocesses raw MD output from remote university storage and uploads to DATA_structures
 │ └── MD_analysis_complete.ipynb # Full-featured exploratory notebook (not standalone)
@@ -38,7 +38,7 @@ Key observables include:
 - **C5–C5 distances**: Used to quantify base–base spatial relationships
 - **Hydrogen bonds**: Computed using geometric criteria between donor/acceptor atoms
 
-These quantities have been computed from raw MD data on remote university storage as described in [`importdata_structure.ipynb`](my_notebooks/importdata_structure.ipynb)
+These quantities have been computed from raw MD data on remote university storage as described in [`importdata_structure.ipynb`](preprocessing/importdata_structure.ipynb)
 
 ---
 
@@ -57,13 +57,13 @@ To explore the results with data only from DATA_structures (inter-residue distan
 
 ## <img src="image.png" alt="alt text" width="40" /> Full workflow
 
-- [`importdata.ipynb`](my_notebooks/importdata.ipynb):  
+- [`importdata.ipynb`](preprocessing/importdata.ipynb):  
   Used to extract raw MD output from a **remote university network storage** and upload the data to Zenodo. Not runnable without access to that network.
 
-- [`importdata_structure.ipynb`](my_notebooks/importdata_structure.ipynb):  
+- [`importdata_structure.ipynb`](preprocessing/importdata_structure.ipynb):  
   Used to extract raw MD output from a **remote university network storage**, compute C5 distances and Hydrogen bond files from raw trajectories, and upload these data to [`DATA_structures`](DATA_structures/). Not runnable without access to that network.
 
-- [`MD_analysis_complete.ipynb`](my_notebooks/MD_analysis_complete.ipynb):  
+- [`MD_analysis_complete.ipynb`](preprocessing/MD_analysis_complete.ipynb):  
   A detailed, exploratory version of the analysis.
 
 ---
